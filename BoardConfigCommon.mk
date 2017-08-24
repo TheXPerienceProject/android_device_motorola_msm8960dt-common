@@ -22,6 +22,12 @@ BOARD_VENDOR := motorola-qcom
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
+# AIDs and CAPS
+TARGET_FS_CONFIG_GEN := \
+    $(DEVICE_PATH)/fs_config/mot_aids.txt \
+    $(DEVICE_PATH)/fs_config/qcom_aids.txt \
+    $(DEVICE_PATH)/fs_config/file_caps.txt
+
 # Platform
 TARGET_BOARD_PLATFORM       := msm8960
 TARGET_BOARD_PLATFORM_GPU   := qcom-adreno320
