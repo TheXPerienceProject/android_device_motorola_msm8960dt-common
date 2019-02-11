@@ -1,28 +1,26 @@
 [
   {
-    "remote": "github",
     "repository": "android_external_stlport",
     "target_path": "external/stlport",
-    "branch":      "lineage-15.1"
   },
   {
-    "remote": "github",
     "repository": "android_external_sony_boringssl-compat",
     "target_path": "external/sony/boringssl-compat",
-    "branch":      "lineage-15.1"
   },
   {
     "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common"
   },
   {
-    "repository": "android_kernel_motorola_ghost",
-    "target_path": "kernel/motorola/ghost"
+    "remote": "github",
+    "repository": "TheXPerienceProject/android_kernel_motorola_ghost",
+    "target_path": "kernel/motorola/ghost",
+    "branch":      "xpe-12.1"
   },
     {
-    "remote": "Unicorn",
-    "repository": "proprietary_vendor_motorola",
+    "remote": "github",
+    "repository": "Klozz/android_vendor_motorola",
     "target_path": "vendor/motorola",
-    "branch":      "xpe-11.1"
+    "branch":      "xpe-12.1"
   }
 ]
