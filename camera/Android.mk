@@ -1,7 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_C_INCLUDES := system/media/camera/include
+LOCAL_C_INCLUDES := \
+    system/media/camera/include \
+    framework/native/include
 
 LOCAL_CLANG := false
 
