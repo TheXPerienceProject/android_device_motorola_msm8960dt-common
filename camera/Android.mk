@@ -2,8 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := \
-    system/media/camera/include \
-    framework/native/include
+    system/media/camera/include
 
 LOCAL_CLANG := false
 
@@ -15,8 +14,8 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libcamera_client \
     libgui \
-    libhidltransport \
     libsensor \
+    libbase\
     libutils
 
 LOCAL_MODULE_RELATIVE_PATH := hw
