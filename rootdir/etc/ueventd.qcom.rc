@@ -202,9 +202,9 @@
 /dev/sec                  0660   system     drmrpc
 
 # EMU detection
-/dev/emu_det              0660  mot_accy     mot_whisper
-/dev/ttyHS1               0660  mot_whisper  mot_whisper
-/dev/hidraw*              0660  root         mot_whisper
+/dev/emu_det              0660  5000     5009
+/dev/ttyHS1               0660  5009  5009
+/dev/hidraw*              0660  root         5009
 
 # NFC permissions
 /dev/pn544                0660  nfc          nfc
