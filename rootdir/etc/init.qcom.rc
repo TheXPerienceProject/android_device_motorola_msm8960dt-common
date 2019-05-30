@@ -450,7 +450,7 @@ on property:bluetooth.hciattach=false
 on property:bluetooth.hciattach=true
     start hciattach
 
-service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
+service hciattach /system/bin/sh /vendor/bin/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin
@@ -458,12 +458,12 @@ service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     disabled
     oneshot
 
-service irsc_util /vendor/bin/irsc_util "/etc/sec_config"
+service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
     user root
     oneshot
 
-service mmi-boot-sh /system/bin/sh /system/etc/init.mmi.boot.sh
+service mmi-boot-sh /system/bin/sh /vendor/etc/init.mmi.boot.sh
     class core
     user root
     #seclabel u:r:mmi_boot:s0
@@ -479,7 +479,7 @@ service ril-daemon /vendor/bin/hw/rild
 on property:sys.boot_completed=1
     start mmi-touch-sh
 
-service mmi-touch-sh /system/bin/sh /init.mmi.touch.sh
+service mmi-touch-sh /system/bin/sh /vendor/bin/init.mmi.touch.sh
     user root
     oneshot
     disabled
