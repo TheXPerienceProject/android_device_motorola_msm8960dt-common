@@ -37,7 +37,7 @@ TARGET_BOOTLOADER_BOARD_NAME    := MSM8960
 TARGET_NO_BOOTLOADER            := true
 
 # Binder API version
-TARGET_USES_64_BIT_BINDER := true
+#TARGET_USES_64_BIT_BINDER := true
 
 # Architecture
 TARGET_ARCH                             := arm
